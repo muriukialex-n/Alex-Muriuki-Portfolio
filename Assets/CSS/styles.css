@@ -92,6 +92,10 @@ img {
     display: grid;
     gap: 1.5rem;
 }
+
+.section {
+    padding-block: 6rem;
+}
 /*=============== STYLE SWITCHER ===============*/
 
 /*=============== HEADER & NAV ===============*/
@@ -173,7 +177,7 @@ img {
     position: relative;
 }
 
-.home__img-wrapper::before
+.home__img-wrapper::before,
 .home__img-wrapper::after {
     content: '';
     position: absolute;
@@ -210,12 +214,12 @@ img {
         border-radius: 21% 79% 50% 50% / 21% 50% 50% 79%;
     }
 
-     0% {
+     100% {
         border-radius: 65% 35% 29% 71% / 55% 30% 70% 45%;
     }
 }
 
-@keyframes animate__before {
+@keyframes animate__after {
     0% {
         border-radius: 21% 79% 50% 50% / 21% 50% 50% 79%;
     }
@@ -224,7 +228,7 @@ img {
         border-radius: 65% 35% 29% 71% / 55% 30% 70% 45%;
     }
 
-     0% {
+     100% {
         border-radius: 21% 79% 50% 50% / 21% 50% 50% 79%;
     }
 }
@@ -257,8 +261,52 @@ img {
     color: var(--white);
 }
 /*=============== ABOUT ===============*/
+.about__container {
+    grid-template-columns: 4fr 8fr;
+    align-items: center;
+}
 
+.about__img-wrapper {
+    position: relative;
+    height: 400px;
+}
+
+.about__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    transition: all .3s ease;
+}
+
+.about__img:nth-child(1) {
+    clip-path: polygon(0 0, 0 32%, 28% 0);
+    transform: translateY(-1.25rem);
+     filter: hue-rotate(0deg);
+}
+
+.about__img:nth-child(2) {
+    clip-path: polygon(28% 0, 0 32%, 0 100%, 17% 100%, 90% 0);
+    transform: translateY(-0.75rem);
+    filter: hue-rotate(90deg) brightness(1.1);
+}
+
+.about__img:nth-child(3) {
+    clip-path: polygon(100% 0, 100% 65%, 74% 100%, 17% 100%, 17% 100%, 90% 0);
+    transform: translateY(-0.25rem);
+    filter: hue-rotate(180deg) saturate(1.2);
+}
+
+.about__img:nth-child(4) {
+    clip-path: polygon(100% 65%, 74% 100%, 100% 100%);
+    transform: translateY(0.25rem);
+     filter: hue-rotate(270deg) brightness(0.9);
+}
 /* About img hover */
+.about__img-wrapper :hover .about__img {
+    transform: translateY(0);
+}
 
 /*=============== QUALIFICATION ===============*/
 
@@ -299,6 +347,12 @@ img {
 
 .home__img {
   width: 200px;           /* Adjust width as needed */
+  max-width: 100%;        /* Makes it responsive */
+  height: auto;           /* Maintains aspect ratio */
+  object-fit: cover;      /* Ensures proper scaling */
+}
+.about__img {
+  width: 230px;           /* Adjust width as needed */
   max-width: 100%;        /* Makes it responsive */
   height: auto;           /* Maintains aspect ratio */
   object-fit: cover;      /* Ensures proper scaling */
