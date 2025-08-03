@@ -35,7 +35,7 @@
                     <a href="#services" class="nav__link">Services</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#work" class="nav__link">Portfolio</a>
+                    <a href="#works" class="nav__link">Portfolio</a>
                 </li>
 
                 <li class="nav__item">
@@ -461,16 +461,192 @@
       </section>
 
       <!--==================== PORTFOLIO ====================-->
-      <section class="works" id="works"></section>
+      <section class="works" id="works">
+        <h2 class="section__title title-center" data-title="My Portfolio">
+            Recent Works
+        </h2>
+
+        <div class="work__container container grid">
+            <div class="work__card">
+                <img src="Assets/img/project-img-1.jpg" alt="" class="work__img" />
+                <div class="work__details">
+                    <h3 class="work__title">Web Design</h3>
+                    <span class="work__description">I design modern and responsive websites enhancing online presence and user engagement.</span>
+                </div>
+            </div>
+
+            <div class="work__card">
+                <img src="Assets/img/project-img-2.jpg" alt="" class="work__img" />
+                <div class="work__details">
+                    <h3 class="work__title">Android App</h3>
+                    <span class="work__description">I develop Android applications that provide seamless user experiences and innovative features.</span>
+                </div>
+            </div>
+
+            <div class="work__card">
+                <img src="Assets/img/project-img-3.jpg" alt="" class="work__img" />
+                <div class="work__details">
+                    <h3 class="work__title">PhotoShop</h3>
+                    <span class="work__description">I create stunning graphics and visual content using Adobe Photoshop, enhancing brand identity and storytelling.</span>
+                </div>
+            </div>
+
+            <div class="work__card">
+                <img src="Assets/img/project-img-4.jpg" alt="" class="work__img" />
+                <div class="work__details">
+                    <h3 class="work__title">UI/UX Design</h3>
+                    <span class="work__description">I design intuitive user interfaces and experiences that enhance usability and engagement across digital platforms.</span>
+                </div>
+            </div>
+
+            <div class="work__card">
+                <img src="Assets/img/project-img-5.jpg" alt="" class="work__img" />
+                <div class="work__details">
+                    <h3 class="work__title">Research & Analysis</h3>
+                    <span class="work__description">I conduct in-depth research and analysis to provide insights and solutions that drive growth and innovation.</span>
+                </div>
+            </div>
+
+            <div class="work__card">
+                <img src="Assets/img/project-img-6.jpg" alt="" class="work__img" />
+                <div class="work__details">
+                    <h3 class="work__title">IT Services</h3>
+                    <span class="work__description">I provide comprehensive services, including system administration and technical support to ensure smooth operations.</span>
+                </div>
+            </div>
+        </div>
+      </section>
 
       <!--==================== TESTIMONIALS ====================-->
-      <section class="testimonials"></section>
+      <section class="testimonials section">
+        <h2 class="section__title title-center" data-title="Testimonials">
+            What My Clients Say
+        </h2>
+
+        <div class="testimonials__container container grid">
+            <div class="testimonials__item">
+                <p class="testimonials__description">
+                    "Alex's work is exceptional! He transformed our website into a user-friendly platform
+                    that has significantly improved our online presence. Highly recommend his services!"
+                </p>
+
+                <div class="testimonials__data">
+                    <img src="Assets/img/testimonial-1.jpg" alt="" class="testimonials__img">
+
+                    <div>
+                        <h3 class="testimonials__name">Mike Owen</h3>
+                        <span class="testimonials__identity">Toronto, Canada</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials__item">
+                <p class="testimonials__description">
+                    "Working with Alex was a pleasure! His attention to detail and creativity 
+                    in video editing brought our project to life.
+                    The final product exceeded our expectations and was delivered on time."
+                </p>
+
+                <div class="testimonials__data">
+                    <img src="Assets/img/testimonial-2.jpg" alt="" class="testimonials__img">
+
+                    <div>
+                        <h3 class="testimonials__name">Musungu Ocharo</h3>
+                        <span class="testimonials__identity">Soweto, SouthAfrica</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
 
       <!--==================== CONTACT ====================-->
-      <section class="contact" id="contact"></section>
+      <section class="contact section" id="contact">
+        <h2 class="section__title title-center" data-title="Get in Touch">
+            Contact Me
+        </h2>
+
+        <div class="contact__container container grid">
+            <div class="contact__details">
+                <div class="contact__item">
+                    <i class="fa-solid fa-phone contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Call Me</h3>
+                        <span class="contact__data">+254 793 985 108</span>
+                    </div>
+                </div>
+
+                <div class="contact__item">
+                    <i class="fa-solid fa-envelope contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Email Me</h3>
+                        <span class="contact__data">muriukialex.n@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="contact__item">
+                    <i class="fa-solid fa-location-dot contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Address</h3>
+                        <span class="contact__data">Nairobi, Kenya</span>
+                    </div>
+                </div>
+            </div>
+
+            <form action="" class="contact__form">
+                <div class="form__group">
+                    <div class="form__input">
+                        <input type="text" placeholder="Name" class="input__control">
+                    </div>
+
+                    <div class="form__input">
+                        <input type="email" placeholder="Email" class="input__control">
+                    </div>
+                </div>
+
+                <div class="form__input">
+                        <input type="text" placeholder="Subject" class="input__control">
+                    </div>
+
+                    <div class="form__input">
+                        <textarea 
+                        name="" 
+                        id="" placeholder="Message" 
+                        rows="10" 
+                        class="input__control textarea"></textarea>
+                    </div>
+
+                    <button class="btn btn__contact">Send Message</button>
+            </form>
+        </div>
+      </section>
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="footer__container container">
+            <p class="footer__copyright">&copy;2025 Alex Muriuki. All Rights Reserved</p>
+
+            <div class="footer__social-links">
+                        <a href="" class="footer__social-link">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                        <a href="" class="footer__social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="" class="footer__social-link">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+
+                        <a href="" class="footer__social-link">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+        </div>
+    </footer>
   </body>
 </html>
