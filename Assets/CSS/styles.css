@@ -749,6 +749,61 @@ img {
 
 @media screen and (max-width: 450px) {
 }
+/*for all devices and services*/
+
+/* Medium devices (tablets) */
+@media screen and (max-width: 992px) {
+  .home__container,
+  .about__container,
+  .resume__container,
+  .services__container,
+  .skills__container,
+  .work__container,
+  .testimonials__container,
+  .contact__container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .about__img-wrapper {
+    height: auto;
+  }
+
+  .about__img {
+    position: static;
+    clip-path: none;
+    transform: none;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
+/* Small devices (phones) */
+@media screen and (max-width: 576px) {
+  .home__title {
+    font-size: 2rem;
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .form__group {
+    grid-template-columns: 1fr;
+  }
+
+  .input__control {
+    font-size: 0.95rem;
+  }
+
+  .resume__icon {
+    display: none;
+  }
+}
 
 .home__img {
   width: 200px;           /* Adjust width as needed */
